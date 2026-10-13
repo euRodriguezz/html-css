@@ -2,12 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2:"Passion One", sans-serif;
-    --fonte3: "Nothing You Could Do", cursive;
+    --fonte3: "Caveat", cursive;
 
 }
 
@@ -59,8 +62,14 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    
 }    
+
+section > p {
+    padding-bottom: 2em;
+}
 
 section.normal {
     background-color: white;
@@ -70,13 +79,29 @@ section.normal {
 section.imagem {
     background-color: rgb(61, 61, 61);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
+    background-size: cover;
+    background-attachment: fixed;
 
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.432);
+    text-shadow:1px 1 px 0px black;
+}
+
+section#img01{
+    background-image: url("../imagens/background001.jpg") ;
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url("../imagens/background002.jpg");
+    
+
 }
 
 footer {
@@ -85,4 +110,4 @@ footer {
     text-align: center;
     padding: 10px;
 
-        }
+}
